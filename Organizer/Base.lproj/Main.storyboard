@@ -78,8 +78,8 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqJ-qo-upJ">
-                                <rect key="frame" x="16" y="108" width="343" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqJ-qo-upJ">
+                                <rect key="frame" x="16" y="187" width="343" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -187,12 +187,25 @@
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="Tbc-US-IlD"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFf-dE-FIB">
+                                <rect key="frame" x="16" y="138" width="343" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MD-hH-ijt">
+                                <rect key="frame" x="16" y="89" width="343" height="39"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078430000004" green="0.91764705879999997" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rqJ-qo-upJ" firstAttribute="top" secondItem="th9-gK-y9I" secondAttribute="top" constant="88" id="1gx-bM-ilN"/>
+                            <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="xFf-dE-FIB" secondAttribute="trailing" constant="16" id="1z6-iA-Bff"/>
                             <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="IVV-hv-FlV" secondAttribute="trailing" constant="16" id="27j-1U-y1z"/>
                             <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="ElM-c8-dzy" secondAttribute="trailing" constant="16" id="2PM-qB-I77"/>
+                            <constraint firstItem="rqJ-qo-upJ" firstAttribute="top" secondItem="xFf-dE-FIB" secondAttribute="bottom" constant="10" id="3LX-qm-sJb"/>
                             <constraint firstItem="DRU-Rm-Baq" firstAttribute="top" secondItem="KBp-Z1-bL9" secondAttribute="bottom" constant="15" id="5Jn-Eh-NQE"/>
                             <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="Zuh-PZ-4d7" secondAttribute="trailing" constant="16" id="9Eu-ee-aNn"/>
                             <constraint firstItem="IVV-hv-FlV" firstAttribute="top" secondItem="6PO-9R-B4V" secondAttribute="bottom" constant="25" id="EvW-g4-7UQ"/>
@@ -200,6 +213,9 @@
                             <constraint firstItem="ElM-c8-dzy" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="FHP-oC-W4I"/>
                             <constraint firstItem="th9-gK-y9I" firstAttribute="bottom" secondItem="OLD-kH-5RO" secondAttribute="bottom" constant="50" id="FS2-2i-vdc"/>
                             <constraint firstItem="OLD-kH-5RO" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="33" id="IIp-hr-Go7"/>
+                            <constraint firstItem="xFf-dE-FIB" firstAttribute="top" secondItem="4MD-hH-ijt" secondAttribute="bottom" constant="10" id="IZ5-Yb-zQl"/>
+                            <constraint firstItem="xFf-dE-FIB" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="JOF-df-PU9"/>
+                            <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="4MD-hH-ijt" secondAttribute="trailing" constant="16" id="KBx-MZ-h9i"/>
                             <constraint firstItem="Zuh-PZ-4d7" firstAttribute="top" secondItem="th9-gK-y9I" secondAttribute="top" constant="30" id="U5X-PI-kXO"/>
                             <constraint firstItem="Zuh-PZ-4d7" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="62" id="UDM-Fv-TNL"/>
                             <constraint firstItem="hkw-93-d5W" firstAttribute="top" secondItem="wZJ-dC-bYY" secondAttribute="bottom" constant="25" id="UKg-Ab-1jH"/>
@@ -210,8 +226,10 @@
                             <constraint firstItem="hkw-93-d5W" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="eb1-Od-wua"/>
                             <constraint firstItem="IVV-hv-FlV" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="fIX-eU-slb"/>
                             <constraint firstItem="DRU-Rm-Baq" firstAttribute="leading" secondItem="giL-q5-Ybe" secondAttribute="trailing" id="fsK-NU-jsi"/>
+                            <constraint firstItem="6PO-9R-B4V" firstAttribute="top" secondItem="rqJ-qo-upJ" secondAttribute="bottom" constant="50" id="i5F-2B-5iN"/>
                             <constraint firstItem="rqJ-qo-upJ" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="iCv-GB-mOn"/>
                             <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="I2a-bt-JIe" secondAttribute="trailing" constant="16" id="kmG-wQ-B4O"/>
+                            <constraint firstItem="4MD-hH-ijt" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="n8f-mC-AOm"/>
                             <constraint firstItem="th9-gK-y9I" firstAttribute="trailing" secondItem="KSm-QH-qcF" secondAttribute="trailing" constant="321" id="oLX-Va-5ym"/>
                             <constraint firstItem="KSm-QH-qcF" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="rhp-eM-LKp"/>
                             <constraint firstItem="I2a-bt-JIe" firstAttribute="leading" secondItem="th9-gK-y9I" secondAttribute="leading" constant="16" id="tGD-Cz-soD"/>
