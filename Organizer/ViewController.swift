@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Organizer
 //
-//  Created by Student on 13.02.18.
 //  Copyright © 2018 Grilborzer. All rights reserved.
 //
 
